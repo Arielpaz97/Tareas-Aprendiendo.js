@@ -1,0 +1,24 @@
+[
+    {
+        "marca": "Renault",
+        "modelo": "4",
+        "seguro": 800
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Taunus",
+        "seguro": 1000
+    },
+    {
+        "marca": "Renault",
+        "modelo": "Duster"
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Focus"
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Camaro"
+    }
+]
