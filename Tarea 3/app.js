@@ -17,7 +17,7 @@ const segurosDeAutos = async (marca) => ({
   } catch (error) {
     console.log('Tu JSON no es válido')
   } 
-})
+})()
 
 const calcularSeguro = async (auto) => {
   let vaAPagar = 1000
