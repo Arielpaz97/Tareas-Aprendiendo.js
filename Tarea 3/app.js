@@ -11,7 +11,7 @@ const segurosDeAutos = async (marca) => ({
   try {
     const stringObjeto = fs.readFileSync('./autos.json')
     autos = JSON.parse(stringObjeto)
-    const newAutos = await showPrecios(autos)
+    const newAutos = await getNewAutos(autos)
     const objetoString = JSON.stringify(newAutos, null, 4)
     fs.writeFileSync('./autos.json', objetoString)
   } catch (error) {
@@ -26,7 +26,7 @@ const calcularSeguro = async (auto) => {
   return vaAPagar
 }
 
-const showPrecios = async (autos) => {
+const getNewAutos = async (autos) => {
   let totalAPagar = 0
   if (autos.length) {
     let i
